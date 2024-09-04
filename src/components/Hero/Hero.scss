@@ -1,0 +1,15 @@
+.hero {
+  background: rgba(236, 213, 255, 0.45);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+
+  &__img {
+    object-fit: cover;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+  }
+}
