@@ -14,7 +14,7 @@ function Hero() {
           </div>
           
           <div className="hero__arrow">
-              V
+              <a href="#about">V</a>
           </div>
     </main>
   );

@@ -1,0 +1,28 @@
+@import "../../styles/partials/globals";
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.about {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 5rem;
+  gap: 10rem;
+
+  &__content {
+    width: 40%;
+    margin-top: 2rem;
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__img {
+    img {
+      height: 450px;
+      border-radius: 10px;
+    }
+  }
+}
