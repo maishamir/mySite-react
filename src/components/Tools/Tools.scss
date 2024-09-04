@@ -4,16 +4,28 @@
 
 
 .tools {
+    min-height: 75vh;
 
     &__list {
-
+        display: flex;
+        // border: 1px solid rebeccapurple;
+        padding: 1.5rem 3rem;
+        list-style: none;
+        width: 85%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        row-gap: 3rem;
     }
 
     &__listItem {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 1.5rem;
     }
 
     &__image {
-        height: 3rem;
+        height: 4.5rem;
     }
 }
