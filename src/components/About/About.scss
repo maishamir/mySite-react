@@ -2,6 +2,10 @@
 @import "../../styles/partials/mixins";
 @import "../../styles/partials/variables";
 
+#about-me {
+  padding: 2rem;
+}
+
 .about {
   min-height: 75vh;
   display: flex;

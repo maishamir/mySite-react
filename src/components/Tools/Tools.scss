@@ -5,6 +5,11 @@
 
 .tools {
     min-height: 75vh;
+    padding: 2rem;
+    
+    &__title {
+        font-size: 2rem;
+    }
 
     &__list {
         display: flex;
