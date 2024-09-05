@@ -4,10 +4,10 @@ import "./About.scss"
 
 function About() {
   return (
-    <>
+    <div id="about">
       <h1>About Me</h1>
       <section className="about">
-        <div className="about__content" id="about">
+        <div className="about__content">
           <p>
             Hey there! Nice to see you again 😊 I hold a Bachelor's degree in
             Computer Science from the University of Victoria as well as a
@@ -28,7 +28,7 @@ function About() {
           <img src={aboutImg} alt="" />
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
