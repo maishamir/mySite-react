@@ -4,12 +4,11 @@
 
 .hero {
   height: 100vh;
-  background: rgb(115, 132, 107);
+  background: rgb(166, 200, 224);
   background: linear-gradient(
     180deg,
-    rgba(115, 132, 107, 1) 0%,
-    rgba(115, 132, 107, 1) 7%,
-    rgba(224, 215, 202, 1) 100%
+    rgba(166, 200, 224, 1) 0%,
+    rgba(249, 245, 241, 1) 100%
   );
 
   &__content {

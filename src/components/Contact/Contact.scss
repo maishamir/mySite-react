@@ -4,7 +4,7 @@
 
 .contact {
   min-height: 40vh;
-  background: $mushroomNeutral;
+  background: $dreamyMeadowNeutral;
 
   &__content {
     display: flex;
@@ -39,7 +39,7 @@
       input, textarea {
         padding: 1rem;
         border-radius: 8px;
-        border: 1px solid purple;
+        border: 1px solid $mushroomAction;
       }
     }
   }
