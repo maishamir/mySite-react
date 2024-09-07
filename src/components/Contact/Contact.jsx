@@ -15,8 +15,8 @@ function Contact() {
             send me a quick message here!
           </p>
           <div className="contact__socials">
-            <img src={ghIcon} alt="" className="contact__socials-icon" />
-            <img src={liIcon} alt="" className="contact__socials-icon" />
+            <a href="https://github.com/maishamir"><img src={ghIcon} alt="github profile" className="contact__socials-icon" /></a> 
+            <a href="https://www.linkedin.com/in/maishamir/"><img src={liIcon} alt="linkedin profile" className="contact__socials-icon" /></a> 
           </div>
         </div>
         <div className="contact__form">
