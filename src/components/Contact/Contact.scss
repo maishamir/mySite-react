@@ -1,5 +1,10 @@
+@import "../../styles/partials/globals";
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
 .contact {
   min-height: 40vh;
+  background: $mushroomNeutral;
 
   &__content {
     display: flex;

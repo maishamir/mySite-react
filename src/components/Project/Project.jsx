@@ -5,7 +5,7 @@ import ghIcon from "/icons/github_icon.svg"
 
 function Project() {
   return (
-    <section className="project">
+    <section className="project" id="projects">
       <h1>Projects</h1>
       <div className="project__container">
         <div className="project__card">

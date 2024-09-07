@@ -6,6 +6,7 @@
 .tools {
     min-height: 75vh;
     padding: 2rem;
+    background: $mushroomNeutral;
     
     &__title {
         font-size: 2rem;
@@ -32,5 +33,9 @@
 
     &__image {
         height: 4.5rem;
+
+        path {
+          fill: red;  
+        }
     }
 }

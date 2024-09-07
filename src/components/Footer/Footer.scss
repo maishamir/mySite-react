@@ -1,5 +1,9 @@
+@import "../../styles/partials/globals";
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
 footer {
-    background: green;
+    background: $mushroomBrand;
     text-align: center;
     color: white;
     padding: 1rem;
