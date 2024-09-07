@@ -1,19 +1,40 @@
 .project {
+  padding: 2rem;
+
+  &__container {
     display: flex;
-    justify-content: center;
+    padding: 2rem;
+  }
 
-    &__container {
-        display: flex;
-        width: 40%;
-        gap: 1rem;
-        cursor: pointer;
+  &__card {
+    display: flex;
+    width: 40%;
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 250px;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__link {
+    margin-left: 2rem;
+    a {
+        color: black;
+        text-decoration: none;
     }
-
-    &__img {
-        width: 250px;
-        border-radius: 8px;
-        height: 200px;
-        object-fit: cover;
-
-    } 
+  }
 }

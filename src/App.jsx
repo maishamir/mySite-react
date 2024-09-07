@@ -12,7 +12,6 @@ function App() {
       <div>
         <Header />
         <Hero />
-        <h1>Projects</h1>
         <Project />
         <About />
         <Tools />
