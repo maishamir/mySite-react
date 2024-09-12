@@ -6,13 +6,32 @@ import ghIcon from "/icons/github_icon.svg"
 
 function Project() {
 
+  const handleMouseMove = e => {
+    const card = e.currentTarget;
+    const cardWidth = card.offsetWidth;
+    const cardHeight = card.offsetHeight;
+    const centerX = card.offsetLeft + cardWidth / 2;
+    const centerY = card.offsetTop + cardHeight / 2;
+    const mouseX = e.clientX - centerX;
+    const mouseY = e.clientY - centerY;
+
+    const rotateX = -1 * (mouseY / (cardHeight / 2)) * 5;
+    const rotateY = (mouseX / (cardWidth / 2)) * 5;
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  }
+
+  const handleMouseLeave = e => {
+    const card = e.currentTarget;
+    card.style.transform = 'rotateX(0deg) rotateY(0deg)'
+  }
 
 
   return (
     <section className="project" id="projects">
       <h1 className="project__title">projects</h1>
       <div className="project__container">
-        <div className="project__card">
+        <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
           <div className="project__img-container">
             <a href="https://wand-and-couldron.up.railway.app/">
               <img src={projImage} alt="" className="project__img" />
