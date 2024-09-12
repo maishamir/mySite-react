@@ -25,7 +25,7 @@ function About() {
         </div>
 
         <div className="about__img">
-          <img src={aboutImg} alt="" />
+          <img src={aboutImg} alt="maisha image" />
         </div>
       </section>
     </div>
