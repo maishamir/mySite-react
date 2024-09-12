@@ -4,12 +4,15 @@
 
 .hero {
   height: 100vh;
-  background: rgb(166, 200, 224);
-  background: linear-gradient(
-    180deg,
-    rgba(166, 200, 224, 1) 0%,
-    rgba(249, 245, 241, 1) 100%
-  );
+  background: $softForestBrand;
+  // background: linear-gradient(180deg, #FAF8F1 0%, #A2AC80 100%);
+  padding-bottom: 80px; // Add some space and gradient effect
+
+  background-image: url("groovepaper.png");
+
+  &__title {
+  
+  }
 
   &__content {
     display: flex;
@@ -19,6 +22,9 @@
     gap: 10rem;
   }
 
+  &__text {
+    text-align: center;
+  }
   &__img {
     object-fit: cover;
     height: 360px;
@@ -26,15 +32,13 @@
     border-radius: 50%;
   }
 
-  &__arrow {
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    cursor: pointer;
 
-    a {
-      color: black;
-      text-decoration: none;
+  &__arrow {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 2rem;
     }
   }
 }

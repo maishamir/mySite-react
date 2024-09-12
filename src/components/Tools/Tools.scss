@@ -2,40 +2,39 @@
 @import "../../styles/partials/variables";
 @import "../../styles/partials/mixins";
 
-
 .tools {
-    min-height: 75vh;
-    padding: 2rem;
-    background: $dreamyMeadowNeutral;
-    
-    &__title {
-        font-size: 2rem;
-    }
+  min-height: 40vh;
+  padding: 2rem;
+  background: $softForestBrand;
+  background-image: url("groovepaper.png");
 
-    &__list {
-        display: flex;
-        // border: 1px solid rebeccapurple;
-        padding: 1.5rem 3rem;
-        list-style: none;
-        width: 85%;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-        row-gap: 3rem;
-    }
+  &__title {
+    font-size: 2rem;
+  }
 
-    &__listItem {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem 1.5rem;
-    }
+  &__list {
+    display: flex;
+    // padding: 1.5rem 1rem;
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    row-gap: 3rem;
+  }
 
-    &__image {
-        height: 4.5rem;
+  &__listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1.5rem;
+  }
 
-        path {
-          fill: red;  
-        }
+  &__image {
+    height: 3rem;
+
+    path {
+      fill: red;
     }
+  }
 }
