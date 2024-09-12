@@ -1,9 +1,34 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from "emailjs-com";
 import "./Contact.scss";
 import ghIcon from "/Users/maishamir/Documents/mySite-react/public/icons/github_icon.svg";
 import liIcon from "/Users/maishamir/Documents/mySite-react/public/icons/linkedin_icon.svg";
 
+
 function Contact() {
+
+  const form = useRef();
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'contact_service', 
+      'contact_form',
+      form.current,
+      'Nbg4qGlUUFfDrxmDe'
+    ).then(
+      (result) => {
+        console.log("Message sent successfully", result.text)
+      }, 
+      (error) => {
+        console.error("Failed to send message", error.text)
+      }
+    )
+  }
+
+
+
   return (
     <section className="contact">
       <div className="contact__content">
@@ -20,9 +45,9 @@ function Contact() {
           </div>
         </div>
         <div className="contact__form">
-          <form action="" className="contact__form-fields">
-            <input type="text" name="name" id="name" placeholder="name" />
-            <input type="email" name="email" id="email" placeholder="email" />
+          <form ref={form} onSubmit={handleSubmit} className="contact__form-fields">
+            <input type="text" name="from_name" id="name" placeholder="name" />
+            <input type="email" name="user_email" id="email" placeholder="email" />
             <textarea
               name="message"
               id="message"
