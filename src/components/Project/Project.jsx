@@ -3,10 +3,14 @@ import projImage from "../../assets/images/Spell Randomizer.png";
 import "./Project.scss";
 import ghIcon from "/icons/github_icon.svg"
 
+
 function Project() {
+
+
+
   return (
     <section className="project" id="projects">
-      <h1>Projects</h1>
+      <h1 className="project__title">projects</h1>
       <div className="project__container">
         <div className="project__card">
           <div className="project__img-container">
@@ -17,7 +21,7 @@ function Project() {
           <div className="project__content">
             <p className="project__name">Harry Potter Spell Randomizer</p>
             <p className="project__description">
-              A whismical Harry Potter Spell randomizer which uses the PotterDB
+              A whimsical Harry Potter Spell randomizer which uses the PotterDB
               ApI to generate and display random spells from the Harry Potter
               universe.
             </p>
