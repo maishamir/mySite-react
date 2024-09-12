@@ -15,8 +15,8 @@ function Project() {
     const mouseX = e.clientX - centerX;
     const mouseY = e.clientY - centerY;
 
-    const rotateX = -1 * (mouseY / (cardHeight / 2)) * 5;
-    const rotateY = (mouseX / (cardWidth / 2)) * 5;
+    const rotateX = -1 * (mouseY / (cardHeight / 2)) * 8;
+    const rotateY = (mouseX / (cardWidth / 2)) * 8;
 
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   }
