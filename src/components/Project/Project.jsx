@@ -15,8 +15,8 @@ function Project() {
     const mouseX = e.clientX - centerX;
     const mouseY = e.clientY - centerY;
 
-    const rotateX = -1 * (mouseY / (cardHeight / 2)) * 8;
-    const rotateY = (mouseX / (cardWidth / 2)) * 8;
+    const rotateX = -1 * (mouseY / (cardHeight / 2)) * 10;
+    const rotateY = (mouseX / (cardWidth / 2)) * 10;
 
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   }
@@ -29,7 +29,7 @@ function Project() {
 
   return (
     <section className="project" id="projects">
-      <h1 className="project__title">projects</h1>
+      <p>Click on a project to see it live</p>
       <div className="project__container">
         <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
           <div className="project__img-container">

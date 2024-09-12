@@ -3,7 +3,7 @@
 @import "../../styles/partials/variables";
 
 #about-me {
-  padding: 2rem;
+  // padding: 2rem;
 
 }
 
@@ -16,8 +16,14 @@
   gap: 10rem;
 
   &__content {
-    width: 40%;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    // border: 10px solid green;
+  }
+  &__text {
+    width: 50%;
+    // margin-top: 2rem;
 
     p {
       margin: 1rem 0;
