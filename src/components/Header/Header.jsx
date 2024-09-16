@@ -8,9 +8,9 @@ function Header() {
       <div className='header__logo'>MM</div>
       <div className='header__nav'>
         <ul className='header__links'>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#about-me">about</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </header>

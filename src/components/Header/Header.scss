@@ -16,10 +16,13 @@
     font-size: 2rem;
     font-family: "Libre Baskerville", serif;
     font-weight: lighter;
+    color: #fbf6e0;
   }
 
   &__nav {
-    width: 25%;
+    margin: 0 auto;
+    // border: 1px solid black;
+    width: 50%;
   }
 
   &__links {
@@ -30,8 +33,10 @@
     padding: 0;
 
     a {
-      color: black;
+      margin: 0 3rem;
+      color: #fbf6e0;
       text-decoration: none;
+      font-weight: 600;
 
       &:hover {
         text-decoration: underline;

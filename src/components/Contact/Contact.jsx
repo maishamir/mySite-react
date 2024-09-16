@@ -38,19 +38,11 @@ function Contact() {
             send me a quick message here!
           </p>
           <div className="contact__socials">
-            <a href="https://github.com/maishamir">
-              <img
-                src={ghIcon}
-                alt="github profile"
-                className="contact__socials-icon"
-              />
+            <a href="https://github.com/maishamir" target="_blank" >
+              <i className="fa-brands fa-github fa-3x contact__icon"></i>
             </a>
-            <a href="https://www.linkedin.com/in/maishamir/">
-              <img
-                src={liIcon}
-                alt="linkedin profile"
-                className="contact__socials-icon"
-              />
+            <a href="https://www.linkedin.com/in/maishamir/" target="_blank" >
+              <i className="fa-brands fa-linkedin fa-3x contact__icon"></i>
             </a>
           </div>
         </div>
@@ -74,7 +66,7 @@ function Contact() {
               placeholder="message"
             ></textarea>
             <button type="submit" className="contact__submit">
-              Send message
+              send message
             </button>
           </form>
         </div>

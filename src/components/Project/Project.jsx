@@ -29,7 +29,7 @@ function Project() {
 
   return (
     <section className="project" id="projects">
-      <p>Click on a project to see it live</p>
+      <p className="project__direction">Click on a project to see it live</p>
       <div className="project__container">
         <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
           <div className="project__img-container">
@@ -45,7 +45,7 @@ function Project() {
               universe.
             </p>
             <div className="project__link">
-              <a href="https://github.com/maishamir/hp-spell-randomizer">
+              <a href="https://github.com/maishamir/hp-spell-randomizer" target="_blank">
                 <img src={ghIcon} alt="" />
               </a>
             </div>

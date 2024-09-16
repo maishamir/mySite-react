@@ -5,9 +5,12 @@
 .tools {
   min-height: 40vh;
   padding: 2rem;
-  background: $softForestBrand;
-  background-image: url("groovepaper.png");
-
+  margin: 3rem 0;
+  // background: $softForestBrand;
+  // background-image: url("groovepaper.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   &__title {
     font-size: 2rem;
   }
@@ -15,9 +18,11 @@
   &__list {
     display: flex;
     // padding: 1.5rem 1rem;
+    justify-content: space-evenly;
     list-style: none;
     width: 90%;
     margin: 0 auto;
+    // background: red;
     flex-wrap: wrap;
     margin-top: 2rem;
     row-gap: 3rem;
@@ -31,10 +36,7 @@
   }
 
   &__image {
-    height: 3rem;
-
-    path {
-      fill: red;
-    }
+    font-size: 3rem;
+    color: #c05e3d;
   }
 }

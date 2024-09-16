@@ -4,11 +4,12 @@
 
 .project {
   padding: 2rem;
-  // background: $strawberryFieldsNeutral;
-  // background: $dreamyMeadowBrand;
-  // background-image: url("groovepaper.png");
   position: relative;
   z-index: 1;
+
+  &__direction {
+    font-weight: 600;
+  }
 
   &__title {
     font-size: 1.5rem;
