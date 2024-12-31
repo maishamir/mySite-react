@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.scss";
 import ghIcon from "/Users/maishamir/Documents/mySite-react/public/icons/github_icon.svg";
@@ -6,10 +6,11 @@ import liIcon from "/Users/maishamir/Documents/mySite-react/public/icons/linkedi
 
 function Contact() {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setIsSending(true)
     emailjs
       .sendForm(
         "contact_service",
@@ -19,12 +20,17 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log("Message sent successfully", result.text);
+          alert("Message sent successfully!")
+          form.current.reset()
         },
         (error) => {
           console.error("Failed to send message", error.text);
         }
-      );
+    )
+      .finally(() => {
+        setIsSending(false)
+      });
+    
   };
 
   return (
@@ -65,8 +71,8 @@ function Contact() {
               id="message"
               placeholder="message"
             ></textarea>
-            <button type="submit" className="contact__submit">
-              send message
+            <button type="submit" className="contact__submit" disabled={isSending}>
+              {isSending ? "sending..." : "Send Message"}
             </button>
           </form>
         </div>
