@@ -30,10 +30,11 @@
   }
   &__text {
     width: 50%;
-    color: $softForestNeutral;
+    // color: $softForestNeutral;
+    color: white;
     font-size: 1.1rem;
     background: rgba(204, 85, 0, 0.5);
-    backdrop-filter: blur(10px); /* Apply the blur effect */
+    backdrop-filter: blur(6px); /* Apply the blur effect */
     -webkit-backdrop-filter: blur(10px); /* Apply the blur effect */
     padding: 20px;
     border-radius: 3rem;
