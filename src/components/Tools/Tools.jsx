@@ -25,7 +25,7 @@ function Tools() {
           <p>CSS</p>
         </li>
         <li className="tools__listItem">
-          <i class="devicon-postgresql-plain tools__image"></i>
+          <i className="devicon-postgresql-plain tools__image"></i>
           <p>PostgreSQL</p>
         </li>
         <li className="tools__listItem">
@@ -41,7 +41,7 @@ function Tools() {
           <p>Sass</p>
         </li>
         <li className="tools__listItem">
-          <i class="devicon-csharp-plain tools__image"></i>
+          <i className="devicon-csharp-plain tools__image"></i>
           <p>CSharp</p>
         </li>
         <li className="tools__listItem">
