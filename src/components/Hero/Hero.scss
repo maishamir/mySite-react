@@ -29,6 +29,25 @@
   &__text {
     text-align: center;
     color: #fbf6e0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #fbf6e0;
+      padding: 1rem 2rem;
+      border: 2px solid white;
+      // width: 33%;
+      border-radius: 1.5rem;
+      margin: 0 auto;
+
+      &:hover {
+        background: rgba(251, 246, 224, 0.5);
+      }
+    }
+    
+      
   }
 
   &__blurb {
@@ -41,13 +60,14 @@
     border-radius: 50%;
   }
 
+  &__resume {
+    text-transform: uppercase;
+  }
+
   &__arrow {
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    img {
-      height: 2.5rem;
-    }
   }
 }
 
