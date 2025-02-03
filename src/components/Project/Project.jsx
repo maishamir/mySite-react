@@ -7,7 +7,7 @@ function ProjectCard({ link, img1, name, description, gh_link, tech, handleMouse
   return (
     <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
           <div className="project__img-container">
-            <a href={link}>
+            <a href={link} target="_blank">
               <img src={img1} alt={name} className="project__img" />
             </a>
           </div>
