@@ -1,5 +1,4 @@
 import React from "react";
-import projImage from "../../assets/images/Spell Randomizer.png";
 import "./Project.scss";
 import ghIcon from "/icons/github_icon.svg"
 import projects from "../../../src/data/projects.json"

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "link": "https://wand-and-couldron.up.railway.app/",
-        "img1": "src/assets/images/Spell Randomizer.png",
+        "img1": "/Spell Randomizer.png",
         "img2": "",
         "name": "Harry Potter Spell Randomizer",
         "description": "A whimsical Harry Potter Spell randomizer which uses PotterDB API to generate and display random spells from the Harry Potter universe.",
@@ -12,7 +12,7 @@
     {
         "id":  2,
         "link": "https://pomodoro-timer-maishamir.vercel.app/", 
-        "img1": "src/assets/images/pomLightTheme.png",
+        "img1": "/pomLightTheme.png",
         "img2": "/Users/maishamir/Documents/mySite-react/src/assets/images/pomDarkTheme.png",
         "name": "Pomodoro Timer",
         "description": "A simple and effective Pomodoro timer that tracks completed sessions, lets users set priorities, and take optional breaks.",
