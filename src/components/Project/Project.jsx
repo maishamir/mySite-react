@@ -2,6 +2,32 @@ import React from "react";
 import projImage from "../../assets/images/Spell Randomizer.png";
 import "./Project.scss";
 import ghIcon from "/icons/github_icon.svg"
+import projects from "../../../src/data/projects.json"
+
+function ProjectCard({ link, img1, name, description, gh_link, tech, handleMouseMove, handleMouseLeave}) {
+  return (
+    <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
+          <div className="project__img-container">
+            <a href={link}>
+              <img src={img1} alt={name} className="project__img" />
+            </a>
+          </div>
+          <div className="project__content">
+        <p className="project__name">{name}</p>
+            <p className="project__description">
+              {description}
+            </p>
+            <div className="project__link">
+              <a href={gh_link} target="_blank">
+                <img src={ghIcon} alt="" />
+              </a>
+            </div>
+            {/* <div className="project__tech">CSS | JavaScript | EJS</div> */}
+          </div>
+        </div> 
+    
+  ) 
+}
 
 
 function Project() {
@@ -31,7 +57,7 @@ function Project() {
     <section className="project" id="projects">
       <p className="project__direction">Click on a project to see it live</p>
       <div className="project__container">
-        <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
+        {/* <div onMouseMove={handleMouseMove } onMouseLeave={handleMouseLeave} className="project__card">
           <div className="project__img-container">
             <a href="https://wand-and-couldron.up.railway.app/">
               <img src={projImage} alt="" className="project__img" />
@@ -51,7 +77,23 @@ function Project() {
             </div>
             <div className="project__tech">CSS | JavaScript | EJS</div>
           </div>
-        </div>
+        </div> */}
+
+        {projects.map(project => {
+          return (
+            <ProjectCard
+              key={project.id}
+              link={project.link}
+              img1={project.img1}
+              name={project.name}
+              description={project.description}
+              gh_link={project.gh_link}
+              tech={project.tech}
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+            />
+          )
+        })}
       </div>
     </section>
   );

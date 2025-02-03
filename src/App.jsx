@@ -6,11 +6,12 @@ import Tools from "./components/Tools/Tools";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Project from "./components/Project/Project";
+import "./App.scss"
 
 function App() {
   return (
     <>
-      <div>
+      <div className="App">
         <Header />
         <Hero />
         <Project />
