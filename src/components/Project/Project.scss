@@ -1,6 +1,6 @@
-@import "../../styles/partials/globals";
-@import "../../styles/partials/mixins";
-@import "../../styles/partials/variables";
+@use "../../styles/partials/globals" as *;
+// @use "../../styles/partials/variables" as *;
+
 
 .project {
   padding: 2rem;
@@ -19,6 +19,15 @@
     display: flex;
     padding: 2rem;
     gap: 2rem;
+    flex-direction: column; //for mobile
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    @include lgDesktop {
+      flex-direction: row;
+    }
   }
 
   &__card {
@@ -29,15 +38,35 @@
     background: rgba(109, 143, 116, 0.75);
     padding: 1rem 1.5rem;
     border-radius: 8px;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    position: relative;
+
+
+    @include desktop {
+      width: 40%;
+    }
+
+    @include lgDesktop {
+      flex-direction: row;
+      width: 40%;
+      align-items: flex-start;
+    }
+
   }
 
   &__img {
-    width: 250px;
+    width: 100%;
     border-radius: 8px;
     height: 200px;
     object-fit: cover;
     cursor: pointer;
     transition: box-shadow 150ms;
+
+    @include lgDesktop {
+      width: 250px;
+    }
 
     &:hover {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -47,7 +76,13 @@
   &__content {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 0.75rem;
+
+
+    @include lgDesktop {
+      
+    }
   }
 
   &__name {
