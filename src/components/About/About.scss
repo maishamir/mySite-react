@@ -27,26 +27,41 @@
     gap: 5rem;
     align-items: center;
     padding: 0 10rem;
+    flex-direction: column;
+
+    @include lgDesktop {
+      flex-direction: row;
+    }
   }
   &__text {
-    width: 50%;
+    // width: 50%;
+    width: 100%;
     // color: $softForestNeutral;
     color: white;
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
+    font-size: 1rem;
     background: rgba(204, 85, 0, 0.5);
     backdrop-filter: blur(6px); /* Apply the blur effect */
     -webkit-backdrop-filter: blur(10px); /* Apply the blur effect */
     padding: 20px;
     border-radius: 3rem;
+    order: 1;
 
     p {
       margin: 1rem 0;
+    }
+
+    @include lgDesktop {
+      order: 0;
+      width: 50%;
+      font-size: 1.1rem;
     }
   }
 
   &__img {
     img {
-      height: 500px;
+      height: 400px;
+
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
       border-radius: 8px;
