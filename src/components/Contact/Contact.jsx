@@ -6,11 +6,11 @@ import liIcon from "/Users/maishamir/Documents/mySite-react/public/icons/linkedi
 
 function Contact() {
   const form = useRef();
-  const [isSending, setIsSending] = useState(false)
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSending(true)
+    setIsSending(true);
     emailjs
       .sendForm(
         "contact_service",
@@ -20,17 +20,16 @@ function Contact() {
       )
       .then(
         (result) => {
-          alert("Message sent successfully!")
-          form.current.reset()
+          alert("Message sent successfully!");
+          form.current.reset();
         },
         (error) => {
           console.error("Failed to send message", error.text);
         }
-    )
+      )
       .finally(() => {
-        setIsSending(false)
+        setIsSending(false);
       });
-    
   };
 
   return (
@@ -44,10 +43,10 @@ function Contact() {
             send me a quick message here!
           </p>
           <div className="contact__socials">
-            <a href="https://github.com/maishamir" target="_blank" >
+            <a href="https://github.com/maishamir" target="_blank">
               <i className="fa-brands fa-github fa-3x contact__icon"></i>
             </a>
-            <a href="https://www.linkedin.com/in/maishamir/" target="_blank" >
+            <a href="https://www.linkedin.com/in/maishamir/" target="_blank">
               <i className="fa-brands fa-linkedin fa-3x contact__icon"></i>
             </a>
           </div>
@@ -71,7 +70,11 @@ function Contact() {
               id="message"
               placeholder="message"
             ></textarea>
-            <button type="submit" className="contact__submit" disabled={isSending}>
+            <button
+              type="submit"
+              className="contact__submit"
+              disabled={isSending}
+            >
               {isSending ? "sending..." : "Send Message"}
             </button>
           </form>
