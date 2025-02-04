@@ -17,22 +17,27 @@
 
   &__container {
     display: flex;
-    padding: 2rem;
+    width: 100%;
+    padding: 1rem 0rem;
     gap: 2rem;
     flex-direction: column; //for mobile
+    align-items: center;
 
     @include desktop {
       flex-direction: row;
+      padding: 2rem;
     }
 
     @include lgDesktop {
       flex-direction: row;
+      padding: 2rem;
+      align-items: stretch;
     }
   }
 
   &__card {
     display: flex;
-    width: 40%;
+    width: 100%;
     gap: 1rem;
     // background: rgba(175, 228, 185, 0.75);
     background: rgba(109, 143, 116, 0.75);
@@ -42,11 +47,6 @@
     width: 90%;
     align-items: center;
     position: relative;
-
-
-    @include desktop {
-      width: 40%;
-    }
 
     @include lgDesktop {
       flex-direction: row;
