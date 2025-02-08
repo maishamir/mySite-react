@@ -10,13 +10,13 @@ function ProjectCard({
   description,
   gh_link,
   tech,
-  handleMouseMove,
-  handleMouseLeave,
+  onMouseMove,
+  onMouseLeave,
 }) {
   return (
     <div
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
       className="project__card"
     >
       <div className="project__img-container">
